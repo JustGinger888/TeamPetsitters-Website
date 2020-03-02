@@ -1,14 +1,65 @@
-<form class="submit-student-form" action="send.php" method="post">
-    <h1 class="form-title">Student Detail Form</h1>
-    <label>Name</label>
-    <input type="text" name="first_name" placeholder="Robert Thomas" required>
-    <label>Email</label>
-    <input type="email" name="email" placeholder="Email ID" required>
-    <label>Contact Number</label>
-    <input type='tel' name="telephone" placeholder="+91 91234567890" required>
-    <label>Home Location</label>
-    <input type="text" name="location" placeholder="New York" required>
-    <label>Address</label>
-    <input type="text" name="address" placeholder="Loreum Ipsum" required>
-    <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="test-form">
+  
+        <div>
+          <label>Field 1</label>
+          <input type="text" name="Name" placeholder="Field 1"/>
+        </div>
+      
+        <div>
+          <label>Field 2</label>
+          <input type="text" name="Email" placeholder="Field 2"/>
+        </div>
+        
+        <div>
+          <label>Field 3</label>
+          <input type="text" name="Cell" placeholder="Field 3"/>
+        </div>
+        
+        <div>
+          <label>Field 4</label>
+          <input type="text" name="Area" placeholder="Field 4"/>
+        </div>
+
+        <div>
+          <label>Field 4</label>
+          <input type="text" name="Address" placeholder="Field 4"/>
+        </div>
+      
+        <div>
+          <label>Field 4</label>
+          <input type="text" name="Message" placeholder="Field 4"/>
+        </div>
+      
+          
+        <div>
+          <button type="submit" id="submit-form">Submit</button>
+        </div>
+      
+        <script>
+            var $form = $('form#test-form'),
+                url = 'https://script.google.com/macros/s/AKfycbwbxUlloKE5-huIW1GjosPiGrySd6SaFixdWUnGHPulvSJshb0Y/exec'
+
+            $('#submit-form').on('click', function(e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+                // do something
+            );
+            })
+        </script>
+
+      </form>
+</body>
+</html>
