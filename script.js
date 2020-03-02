@@ -1,14 +1,14 @@
 var $form = $('form#test-form'),
-                url = 'https://script.google.com/macros/s/AKfycbwbxUlloKE5-huIW1GjosPiGrySd6SaFixdWUnGHPulvSJshb0Y/exec'
+    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
 
-            $('#submit-form').on('click', function(e) {
-            e.preventDefault();
-            var jqxhr = $.ajax({
-                url: url,
-                method: "GET",
-                dataType: "json",
-                data: $form.serializeObject()
-            }).success(
-                // do something
-            );
-            })
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
