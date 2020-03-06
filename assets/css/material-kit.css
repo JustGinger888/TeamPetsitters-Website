@@ -15,6 +15,27 @@
 
 /*     brand Colors              */
 
+iframe {
+  width: auto;
+  height:440px;
+}
+
+div.background {
+  background: url(klematis.jpg) repeat;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+div.transbox h4 {
+  margin: 5%;
+  font-weight: 400;
+  color: #9124a3;
+}
+
 .carousel.carousel-full-nagivation .left {
   cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
 }
@@ -1001,17 +1022,29 @@ pre code {
   .container {
     max-width: 720px;
   }
+  iframe {
+    width: auto;
+    height:266px;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
+  iframe {
+    width: auto;
+    height:366px;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+  iframe {
+    width: auto;
+    height:440px;
   }
 }
 
