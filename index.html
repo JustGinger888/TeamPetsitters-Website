@@ -15,7 +15,7 @@
     <link href="./assets/demo/demo.css" rel="stylesheet" />
   </head>
 
-  <body class="index-page sidebar-collapse">
+  <body class="index-page sidebar-collapse" id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
       <div class="container">
@@ -41,8 +41,7 @@
                 class="nav-link"
                 title=""
                 data-placement="bottom"
-                href="#"
-                target="_blank"
+                href="#home"
                 data-original-title="Visit Our Homegage"
               >
                 <i class="material-icons">home</i> Home
@@ -53,8 +52,7 @@
                 class="nav-link"
                 title=""
                 data-placement="bottom"
-                href="#"
-                target="_blank"
+                href="#about"
                 data-original-title="See What We're About"
               >
                 <i class="material-icons">event_note</i> About
@@ -65,8 +63,7 @@
                 class="nav-link"
                 title=""
                 data-placement="bottom"
-                href="#"
-                target="_blank"
+                href="#services"
                 data-original-title="The Services We Provide"
               >
                 <i class="material-icons">info</i> Services
@@ -77,8 +74,18 @@
                 class="nav-link"
                 title=""
                 data-placement="bottom"
-                href="#"
-                target="_blank"
+                href="#prices"
+                data-original-title="See our prices"
+              >
+                <i class="material-icons">attach_money</i> Prices
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                title=""
+                data-placement="bottom"
+                href="contact.html"
                 data-original-title="Get In Touch With Us Now"
               >
                 <i class="material-icons">mail</i> Contact
@@ -115,7 +122,7 @@
       <div class="section section-basic">
         
         <!-- Start About -->
-        <div class="section section-white">
+        <div class="section section-white" id="about">
           <div class="container">
             <div class="title">
               <h1 class="text-primary">We Are Team Petsitters...</h1>
@@ -157,7 +164,7 @@
 
 
         <!-- Start Nav Tabs -->
-        <div class="section section-tabs">
+        <div class="section section-tabs" id="services">
           <div class="container">
             <!--  nav tabs -->
             <div id="nav-tabs">
@@ -185,7 +192,7 @@
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#walking" data-toggle="tab">
-                                <i class="material-icons">pets</i> Walk
+                                <i class="material-icons">pets</i> Dog Walk
                               </a>
                             </li>
                           </ul>
@@ -341,7 +348,7 @@
                       <div class="carousel-item active">
                         <img
                           class="d-block w-100"
-                          src="./assets/img/crsl1.jpg"
+                          src="./assets/img/crsl1.png"
                           alt="First slide"
                         />
                         <div class="carousel-caption d-none d-md-block">
@@ -351,7 +358,7 @@
                       <div class="carousel-item">
                         <img
                           class="d-block w-100"
-                          src="./assets/img/crsl2.jpg"
+                          src="./assets/img/crsl2.png"
                           alt="Second slide"
                         />
                         <div class="carousel-caption d-none d-md-block">
@@ -361,7 +368,7 @@
                       <div class="carousel-item">
                         <img
                           class="d-block w-100"
-                          src="./assets/img/crsl3.jpg"
+                          src="./assets/img/crsl3.png"
                           alt="Third slide"
                         />
                         <div class="carousel-caption d-none d-md-block">
@@ -397,7 +404,7 @@
         <!-- End Carousel -->
 
         <!-- Start nav pills -->
-        <div class="section section-tabs">
+        <div class="section section-tabs" id="prices">
           <div class="container">
             <div id="navigation-pills">
               <div class="title">
@@ -493,12 +500,24 @@
                     <div class="col-md-8">
                       <div class="tab-content">
                         <div class="tab-pane active" id="priceVisit">
+                          <h3>Price per visit start from <span class="text-primary">R89</span></h3> 
+                          This allows us to be fair towards our customers and 
+                          is more affordable than many other solutions avalible. 
+                          Reduced prices are also available on longer sitting periods. 
+                          <br>
+                          <br>
                           Pricing is dependand on various factors, such as the 
                           amount of pets to look after, the required tasks during 
                           the sitting period and extra travel costs may be added if 
                           you live further away.
                         </div>
                         <div class="tab-pane" id="priceSleepover">
+                          <h3>Sleepovers prices from <span class="text-primary">R279</span></h3> 
+                          Sleepovers work on a first come first serve basis and is subject 
+                          to avalibility, and vary depending on the area. Reduced prices 
+                          are also available on longer sitting periods. 
+                          <br>
+                          <br>
                           Pricing is dependand on various factors, such as the 
                           amount of pets to look after, the required tasks during 
                           the sitting period and extra travel costs may be added if 
@@ -531,7 +550,7 @@
             <div class="container-fluid text-center">
               <div class="row">
                 <div class="col-md-6">
-                  <h3>Peter Moffatt - Admin Manager</h3>
+                  <h3>Michelle Moffatt - Admin Manager</h3>
                     <img
                       src="./assets/img/landing.jpg"
                       alt="Rounded Image"
@@ -539,7 +558,7 @@
                     />
                 </div>
                 <div class="col-md-6">
-                  <h3>Tinus van der Merwe - National Manager</h3>
+                  <h3>Peter Moffatt - National Manager</h3>
                   <img
                       src="./assets/img/profile.jpg"
                       alt="Rounded Image"
@@ -589,7 +608,7 @@
         <!-- End Contact -->
 
         <!-- Start Contact -->
-        <div class="section section-white">
+        <div class="section section-white" id="contact">
           <div class="container">
             <div class="title text-primary">
               <h2>
@@ -627,41 +646,13 @@
                         Loading…
                       </iframe>
                   </div>
-                  <h4>E-Mail: <a href="mailto:thepetsitters@webmail.co.za">thepetsitters@webmail.co.za</a></h4>
+                  <h4>E-Mail: <a href="mailto:teampetsitters@icloud.com">teampetsitters@icloud.com</a></h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- End Contact -->
-
-        <!-- Social Media -->
-            <div class="sharing-area text-center">
-              <div class="row justify-content-center">
-                <h3></h3>
-              </div>
-              <button id="twitter" class="btn btn-raised btn-twitter sharrre">
-                <i class="fa fa-twitter"></i> Tweet
-              </button>
-              <button id="facebook" class="btn btn-raised btn-facebook sharrre">
-                <i class="fa fa-facebook-square"></i> Share
-              </button>
-              <button
-                id="googlePlus"
-                class="btn btn-raised btn-google-plus sharrre"
-              >
-                <i class="fa fa-google-plus"></i> Share
-              </button>
-              <a
-                id="github"
-                href="https://github.com/creativetimofficial/material-kit"
-                target="_blank"
-                class="btn btn-raised btn-github"
-              >
-                <i class="fa fa-github"></i> Star
-              </a>
-            </div>
-        <!-- Social Media -->
 
       </div>
     </div>
@@ -675,27 +666,27 @@
         <nav class="float-left">
           <ul>
             <li>
-              <a href="#">
+              <a href="#home">
                 Home
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#about">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="privacyPolicy.html">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="termsOfService.html">
                 Terms Of Service
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="contact.html">
                 Contact
               </a>
             </li>
