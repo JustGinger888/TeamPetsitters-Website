@@ -20,6 +20,11 @@ iframe {
   height:440px;
 }
 
+.contactFrame {
+  width: 100%;
+  height: 1420px;
+}
+
 div.background {
   background: url(klematis.jpg) repeat;
 }
